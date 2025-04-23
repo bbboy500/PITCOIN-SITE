@@ -87,7 +87,7 @@
       background: #222;
     }
 
-    .ca {
+    .ca-copy {
       font-size: 1.1rem;
       color: #000;
       background: #fff;
@@ -96,6 +96,11 @@
       padding: 10px 20px;
       margin-top: 20px;
       display: inline-block;
+      cursor: pointer;
+    }
+
+    .ca-copy:hover {
+      background: #eee;
     }
   </style>
 </head>
@@ -118,9 +123,19 @@
 
   <div class="links">
     <a href="https://x.com/REALPITCOIN" target="_blank">🐦 Twitter</a>
+    <a href="https://t.me/PITVIPERCOIN" target="_blank">📣 Telegram</a>
     <a href="https://pump.fun/7jgMLRwcffjijUN1os8ve3bD5MTgX9iurVUfKLvtpump" target="_blank">💰 Buy on Pump.fun</a>
-    <span class="ca">📜 CA: 7jgMLRwcffjijUN1os8ve3bD5MTgX9iurVUfKLvtpump</span>
+    <span class="ca-copy" onclick="copyCA()">📜 Click to Copy CA</span>
   </div>
+
+  <script>
+    function copyCA() {
+      const ca = "7jgMLRwcffjijUN1os8ve3bD5MTgX9iurVUfKLvtpump";
+      navigator.clipboard.writeText(ca).then(() => {
+        alert("CA copied to clipboard!");
+      });
+    }
+  </script>
 
 </body>
 </html>
