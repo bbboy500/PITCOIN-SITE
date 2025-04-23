@@ -4,14 +4,21 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>PITCOIN</title>
+  <meta name="description" content="Born in the pits. Forged in fire. Wrapped in Viper energy. $PITCOIN is the meme movement of the year.">
+  <meta property="og:title" content="PITCOIN | The Meme Movement of the Year" />
+  <meta property="og:description" content="Born in the pits. Forged in fire. Wrapped in Viper energy. Join $PITCOIN now." />
+  <meta property="og:image" content="background.jpg" />
+  <meta property="og:url" content="https://pitcoin.vercel.app" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" type="image/png" href="coin.png">
   <style>
     body {
       margin: 0;
       padding: 0;
-      background: url('/background.jpg') no-repeat center center fixed;
+      background: url('background.jpg') no-repeat center center fixed;
       background-size: cover;
-      font-family: 'Arial', sans-serif;
-      color: white;
+      font-family: 'Arial Black', 'Arial', sans-serif;
+      color: black;
       text-align: center;
     }
 
@@ -20,13 +27,13 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      gap: 20px;
+      flex-direction: column;
     }
 
     .coin {
-      width: 100px;
-      height: 100px;
-      background: url('/coin.png') no-repeat center center;
+      width: 120px;
+      height: 120px;
+      background: url('coin.png') no-repeat center center;
       background-size: contain;
       animation: flip 3s linear infinite;
     }
@@ -38,40 +45,57 @@
 
     h1 {
       font-size: 4rem;
-      margin-top: 20px;
+      margin: 20px 0 10px;
+      color: black;
+      text-shadow: 1px 1px 0 white;
     }
 
-    .hype-text {
-      font-size: 1.5rem;
-      margin-top: 20px;
-      max-width: 700px;
-      margin-left: auto;
-      margin-right: auto;
-      line-height: 1.6;
+    .hype {
+      font-size: 2rem;
+      background: rgba(255, 255, 255, 0.85);
+      border: 4px solid black;
+      border-radius: 12px;
+      padding: 30px;
+      max-width: 800px;
+      margin: 40px auto;
+      box-shadow: 5px 5px 0 black;
+      color: black;
+      text-shadow: none;
     }
 
     .links {
-      margin-top: 40px;
       display: flex;
       flex-direction: column;
-      align-items: center;
-      gap: 20px;
+      gap: 15px;
+      margin-bottom: 60px;
     }
 
     .links a {
-      display: inline-block;
       font-size: 1.4rem;
-      padding: 14px 30px;
-      border: 2px solid white;
-      color: white;
+      color: #fff;
       text-decoration: none;
-      border-radius: 12px;
-      transition: background 0.3s, color 0.3s;
+      font-weight: bold;
+      background: black;
+      padding: 12px 24px;
+      border-radius: 10px;
+      width: fit-content;
+      margin: 0 auto;
+      transition: 0.3s;
     }
 
     .links a:hover {
-      background: white;
-      color: black;
+      background: #222;
+    }
+
+    .ca {
+      font-size: 1.1rem;
+      color: #000;
+      background: #fff;
+      border: 2px solid black;
+      border-radius: 8px;
+      padding: 10px 20px;
+      margin-top: 20px;
+      display: inline-block;
     }
   </style>
 </head>
@@ -79,36 +103,25 @@
 
   <div class="logo-container">
     <div class="coin"></div>
-    <h1>PITCOIN</h1>
+    <h1>$PITCOIN</h1>
   </div>
 
- <div class="hype" style="
-  font-size: 2rem;
-  font-family: 'Impact', 'Arial Black', sans-serif;
-  color: black;
-  text-shadow: 2px 2px 0 white, -1px -1px 0 white;
-  background: rgba(255, 255, 255, 0.85);
-  border: 4px solid black;
-  border-radius: 12px;
-  padding: 30px;
-  max-width: 800px;
-  margin: 40px auto;
-  box-shadow: 5px 5px 0 black;
-">
-  Born in the pits. Forged in fire. Wrapped in Viper energy.<br /><br />
-  <strong>$PITCOIN</strong> doesn’t follow trends — it shatters them.<br /><br />
-  Something’s building. You can feel it. A storm behind the shades.<br /><br />
-  No roadmap. No promises. Just power.<br />
-  <em>Don’t ask why. Ask how early you are.</em>
-</div>
+  <div class="hype">
+    Born in the pits. Forged in fire. Wrapped in Viper energy.  
+    <br><br>
+    $PITCOIN doesn’t follow trends — it shatters them.  
+    <br><br>
+    Something’s building. You can feel it. A storm behind the shades.  
+    <br><br>
+    <em>Don’t ask why. Ask how early you are.</em>
+  </div>
 
   <div class="links">
-    <a href="https://t.me/PITVIPERCOIN" target="_blank">💬 Join Telegram</a>
-    <a href="https://x.com/REALPITCOIN" target="_blank">🐦 Follow on Twitter</a>
-    <a href="https://pump.fun" target="_blank">🛒 Buy on Pump.fun</a>
-    <a href="#" target="_blank">🔗 CA: COMING SOON</a>
+    <a href="https://pitcoin.vercel.app" target="_blank">🌐 Website</a>
+    <a href="https://x.com/REALPITCOIN" target="_blank">🐦 Twitter</a>
+    <a href="https://pump.fun/7jgMLRwcffjijUN1os8ve3bD5MTgX9iurVUfKLvtpump" target="_blank">💰 Buy on Pump.fun</a>
+    <span class="ca">📜 CA: 7jgMLRwcffjijUN1os8ve3bD5MTgX9iurVUfKLvtpump</span>
   </div>
 
 </body>
 </html>
-
