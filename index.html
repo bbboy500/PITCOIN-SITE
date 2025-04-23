@@ -8,7 +8,7 @@
     body {
       margin: 0;
       padding: 0;
-      background: url("background.jpg") no-repeat center center fixed;
+      background: url('/background.jpg') no-repeat center center fixed;
       background-size: cover;
       font-family: 'Arial', sans-serif;
       color: white;
@@ -21,13 +21,12 @@
       justify-content: center;
       align-items: center;
       gap: 20px;
-      flex-wrap: wrap;
     }
 
     .coin {
       width: 100px;
       height: 100px;
-      background: url("coin.png") no-repeat center center;
+      background: url('/coin.png') no-repeat center center;
       background-size: contain;
       animation: flip 3s linear infinite;
     }
@@ -40,27 +39,39 @@
     h1 {
       font-size: 4rem;
       margin-top: 20px;
-      text-shadow: 2px 2px 5px #000000;
+    }
+
+    .hype-text {
+      font-size: 1.5rem;
+      margin-top: 20px;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+      line-height: 1.6;
     }
 
     .links {
       margin-top: 40px;
-      font-size: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
     }
 
     .links a {
-      color: #fff;
-      background-color: rgba(0, 0, 0, 0.5);
-      margin: 0 12px;
-      padding: 10px 20px;
-      border-radius: 8px;
+      display: inline-block;
+      font-size: 1.4rem;
+      padding: 14px 30px;
+      border: 2px solid white;
+      color: white;
       text-decoration: none;
-      font-weight: bold;
-      transition: background 0.3s;
+      border-radius: 12px;
+      transition: background 0.3s, color 0.3s;
     }
 
     .links a:hover {
-      background-color: rgba(255, 255, 255, 0.2);
+      background: white;
+      color: black;
     }
   </style>
 </head>
@@ -71,10 +82,18 @@
     <h1>PITCOIN</h1>
   </div>
 
+  <div class="hype-text">
+    Born in the pits. Forged in fire. Wrapped in Viper energy. <strong>$PITCOIN</strong> doesn’t follow trends — it shatters them.<br /><br />
+    Something’s building. You can feel it. A storm behind the shades.<br /><br />
+    No roadmap. No promises. Just power. And those who get it... get it.<br />
+    <em>Don’t ask why. Ask how early you are.</em>
+  </div>
+
   <div class="links">
-    <a href="https://t.me/PITVIPERCOIN" target="_blank">Telegram</a>
-    <a href="https://x.com/REALPITCOIN" target="_blank">Twitter</a>
-    <a href="https://pitcoin.vercel.app" target="_blank">Website</a>
+    <a href="https://t.me/PITVIPERCOIN" target="_blank">💬 Join Telegram</a>
+    <a href="https://x.com/REALPITCOIN" target="_blank">🐦 Follow on Twitter</a>
+    <a href="https://pump.fun" target="_blank">🛒 Buy on Pump.fun</a>
+    <a href="#" target="_blank">🔗 CA: COMING SOON</a>
   </div>
 
 </body>
